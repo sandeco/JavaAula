@@ -22,6 +22,9 @@ public class MainActivity extends Activity {
         input = (EditText) findViewById(R.id.input);
         saida = (TextView) findViewById(R.id.output);
         p = new Pessoa();
+
+
+
     }
 
     public void gravar(View v){
@@ -30,8 +33,15 @@ public class MainActivity extends Activity {
     }
 
     public void mostrar(View v){
-        saida.setText(p.getNome());
+
+        p.getCelular().getProcessador().getNucleo().setClock("1.6ghz");
+
+        saida.setText(p.getCelular().getProcessador().getNucleo().getClock());
     }
+
+
+
+
 
 
 

@@ -5,13 +5,36 @@ package sandeco.aula;
  */
 public class Pessoa {
 
+    // propriedades
     private String nome;
     private int idade;
     private int peso;
     private double altura;
 
-    public Pessoa() {
 
+    //associações
+    private Celular celular;
+
+
+
+    //CONSTRUTOR
+    public Pessoa() {
+        celular = new Celular();
+    }
+
+
+    /****
+     * GETTERS AND SETTERS
+     * @return
+     */
+
+
+    public Celular getCelular() {
+        return celular;
+    }
+
+    public void setCelular(Celular celular) {
+        this.celular = celular;
     }
 
     public String getNome() {
